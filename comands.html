@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Charge Link</title>
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/bar.css" />
+    <link rel="stylesheet" href="css/comands/comand_workspace.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body_style">
+    <script src="./js/comands/button.js"></script>
+
+    <div class="bar">
+      <div class="bar_section_1">
+        <img class="logo" src="./resources/icons/logo2.svg" alt="" />
+      </div>
+      <div class="bar_section_2">
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'stats.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_chart.svg" alt="" />
+          <a class="bar_text" href="stats.html">Статистика</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'station.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_layers.svg"
+            alt=""
+          />
+          <a class="bar_text" href="station.html">Станции</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'clients.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_users.svg" alt="" />
+          <a class="bar_text" href="clients.html">Клиенты</a>
+        </button>
+        <div class="border_sections"></div>
+        <button class="bar_button_sections_selected">
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_comands.svg"
+            alt=""
+          />
+          <a>Команды</a>
+        </button>
+        <div class="border_sections"></div>
+      </div>
+      <div class="bar_section_1"></div>
+    </div>
+
+    <div class="workspace">
+      <a class="title_text">Команды</a>
+      <div class="main_box">
+        <div class="workspace_box_section_1">
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_1';"
+          >
+            Change Availability
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_2';"
+          >
+            Change Configuration
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_3';"
+          >
+            Clear Cache
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_4';"
+          >
+            Get Diagnostics
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_5';"
+          >
+            Remote Start Transaction
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_6';"
+          >
+            Remote Stop Transaction
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_7';"
+          >
+            Reset
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_8';"
+          >
+            Unlock Connector
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_9';"
+          >
+            Update Firmware
+          </button>
+          <div class="text_border"></div>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_10';"
+          >
+            Reserve Now
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_11';"
+          >
+            Cancel Reservation
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_12';"
+          >
+            Data Transfer
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_13';"
+          >
+            Get Configuration
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_14';"
+          >
+            Get Local List Version
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_15';"
+          >
+            Send Local List
+          </button>
+          <div class="text_border"></div>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_16';"
+          >
+            Trigger Message
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_17';"
+          >
+            Get Composite Schedule
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_18';"
+          >
+            Clear Charging Profile
+          </button>
+          <button
+            class="button_section"
+            onclick="window.location.href = '#tab_19';"
+          >
+            Set Charging Profile
+          </button>
+        </div>
+        <div class="workspace_box_section_2">
+          <div id="tab_1" class="tabs_content">
+            <div class="part1">
+              <a class="text_sections">Charge Points with OCPP v1.6</a>
+              <div class="part_sections"></div>
+            </div>
+
+            <div class="part2"></div>
+            <div class="part3">
+              <a class="text_sections">Parametrs</a>
+              <div class="part_sections"></div>
+            </div>
+            <div class="part4"></div>
+          </div>
+          <div id="tab_2" class="tabs_content">
+            Секция 2. Здесь пока ничего нет
+          </div>
+          <div id="tab_3" class="tabs_content">
+            Секция 3. Здесь пока ничего нет
+          </div>
+          <div id="tab_4" class="tabs_content">
+            Секция 4. Здесь пока ничего нет
+          </div>
+          <div id="tab_5" class="tabs_content">
+            Секция 5. Здесь пока ничего нет
+          </div>
+          <div id="tab_6" class="tabs_content">
+            Секция 6. Здесь пока ничего нет
+          </div>
+          <div id="tab_7" class="tabs_content">
+            Секция 7. Здесь пока ничего нет
+          </div>
+          <div id="tab_8" class="tabs_content">
+            Секция 8. Здесь пока ничего нет
+          </div>
+          <div id="tab_9" class="tabs_content">
+            Секция 9. Здесь пока ничего нет
+          </div>
+          <div id="tab_10" class="tabs_content">
+            Секция 10. Здесь пока ничего нет
+          </div>
+          <div id="tab_11" class="tabs_content">
+            Секция 11. Здесь пока ничего нет
+          </div>
+          <div id="tab_12" class="tabs_content">
+            Секция 12. Здесь пока ничего нет
+          </div>
+          <div id="tab_13" class="tabs_content">
+            Секция 13. Здесь пока ничего нет
+          </div>
+          <div id="tab_14" class="tabs_content">
+            Секция 14. Здесь пока ничего нет
+          </div>
+          <div id="tab_15" class="tabs_content">
+            Секция 15. Здесь пока ничего нет
+          </div>
+          <div id="tab_16" class="tabs_content">
+            Секция 16. Здесь пока ничего нет
+          </div>
+          <div id="tab_17" class="tabs_content">
+            Секция 17. Здесь пока ничего нет
+          </div>
+          <div id="tab_18" class="tabs_content">
+            Секция 18. Здесь пока ничего нет
+          </div>
+          <div id="tab_19" class="tabs_content">
+            Секция 19. Здесь пока ничего нет
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

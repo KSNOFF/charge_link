@@ -1,0 +1,149 @@
+.bar {
+  display: flex;
+  flex: 0.15;
+  flex-direction: column;
+  transition: all 0.2s;
+  height: 100vh;
+  min-width: 220px;
+  max-width: 288px;
+
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  background-color: #173257;
+}
+
+.bar_section_1 {
+  flex: 0.3;
+  position: relative;
+  background-color: #173257;
+}
+
+.logo {
+  position: absolute;
+
+  width: 70%;
+  height: 70%;
+
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #173257;
+}
+
+.bar_section_2 {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  padding-top: auto;
+  padding-bottom: auto;
+
+  background-color: #173257;
+}
+
+.bar_text {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.border_sections {
+  width: 86%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c1c1c1;
+}
+
+.bar_button_sections_selected {
+  width: 94%;
+  height: 18%;
+  vertical-align: middle;
+  margin: auto;
+
+  background-color: #174688;
+  border: #173257;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-style: "SemiBold";
+  color: aliceblue;
+}
+
+.bar_button_sections {
+  width: 86%;
+  height: 18%;
+  vertical-align: middle;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #173257;
+  border: #173257;
+
+  font-family: "Open Sans";
+  font-size: 1vw;
+  font-weight: 500;
+  font-style: "SemiBold";
+  color: aliceblue;
+}
+
+.bar_button_sections:hover {
+  width: 86%;
+  height: 18%;
+  transition: all 0.2s;
+  vertical-align: middle;
+  margin: auto;
+
+  background-color: #1d57a8;
+  border-radius: 10px;
+  border: #173257;
+
+  font-family: "Open Sans";
+  font-size: 1.1vw;
+  font-weight: 500;
+  font-style: "SemiBold";
+  color: rgb(255, 255, 255);
+}
+
+.bar_icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+/*
+
+.user_box {
+  #;
+  display: inline-flex;
+  width: 100%;
+  height: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.avatar_section {
+  flex: 0.2;
+
+  justify-content: center;
+
+  background-color: #cd4949;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.user_name_section {
+  flex: 0.4;
+  background-color: #1e702d;
+}
+.exit_button_section {
+  flex: 0.3;
+  background-color: #c421ac;
+}
+*/

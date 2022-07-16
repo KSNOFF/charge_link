@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Charge Link</title>
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/bar.css" />
+    <link rel="stylesheet" href="css/client/client_workspace.css" />
+    <link rel="stylesheet" href="css/client/table.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_style">
+    <div class="bar">
+      <div class="bar_section_1">
+        <img class="logo" src="./resources/icons/logo2.svg" alt="" />
+      </div>
+      <div class="bar_section_2">
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'stats.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_chart.svg" alt="" />
+          <a class="bar_text" href="stats.html">Статистика</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'station.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_layers.svg"
+            alt=""
+          />
+          <a class="bar_text" href="station.html">Станции</a>
+        </button>
+        <div class="border_sections"></div>
+        <button class="bar_button_sections_selected">
+          <img class="bar_icon" src="./resources/icons/icon_users.svg" alt="" />
+          <a>Клиенты</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'comands.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_comands.svg"
+            alt=""
+          />
+          <a class="bar_text" href="comands.html">Команды</a>
+        </button>
+        <div class="border_sections"></div>
+      </div>
+      <div class="bar_section_1"></div>
+    </div>
+
+    <div class="workspace">
+      <a class="title_text">Клиенты</a>
+      <div class="main_box">
+        <div class="workspace_box_section_1">
+          <div class="part1">
+            <div class="data_box">
+              <select class="data_selector" name="year" id="year">
+                <option selected disabled value="none">Выберите период</option>
+                <option value="2022">Январь-Июнь 2022</option>
+                <option value="2021">Июль-Декабрь 2022</option>
+                <option value="2022">Январь-Июнь 2021</option>
+                <option value="2021">Июль-Декабрь 2021</option>
+              </select>
+            </div>
+          </div>
+          <div class="part2">
+            <div class="text_box_section_1">Клиент</div>
+
+            <input
+              class="text_input"
+              type="search"
+              name="q"
+              maxlength="8"
+              placeholder="Введите ID"
+            />
+          </div>
+        </div>
+        <div class="workspace_box_section_2">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID Клиента</th>
+                <th>ID Транзакции</th>
+                <th>ID Коннектора</th>
+                <th>Начало</th>
+                <th>Конец</th>
+                <th>Энергия, кВч</th>
+                <th>Баланс</th>
+
+                <th>Блокировка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>655555</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>192532</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+              <tr>
+                <td>655555</td>
+                <td>113542</td>
+                <td>112876</td>
+                <td>23/06/2022 16:43</td>
+                <td>23/06/2022 16:56</td>
+                <td>4.1</td>
+                <td>1300 р.</td>
+                <td><button class="button_block">Заблокировать</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="workspace_box_section_3">
+          <div class="text_box_section_3">
+            Колличество клиентов за период: 14
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

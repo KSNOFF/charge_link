@@ -1,0 +1,85 @@
+.table {
+  width: 100%;
+  border-left: 1px solid rgba(141, 141, 141, 0.5);
+  border-radius: 10px;
+  border: none;
+  border-collapse: collapse;
+
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: "SemiBold";
+  color: rgb(61, 61, 61);
+}
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 10px;
+  background: #cdcdcd;
+  font-size: 16px;
+  border-right: 1px solid rgb(141, 141, 141, 0.5);
+}
+.table tbody tr:last-child {
+  border-left: 1px solid rgba(141, 141, 141, 0.5);
+  border-radius: 10px;
+}
+
+.table thead tr th:first-child {
+  border-left: 1px solid rgba(141, 141, 141, 0.5);
+  border-radius: 10px 0 0 0;
+}
+.table thead tr th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.table tbody td {
+  text-align: left;
+  border: 1px solid rgba(141, 141, 141, 0.5);
+  padding: 10px 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.table tbody tr:nth-child(even) {
+  background: #dfdfdf;
+}
+.table tbody tr:last-child td {
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.5);
+}
+.table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.table tbody tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.button_block {
+  margin: auto;
+  padding-left: 3%;
+  width: 100%;
+  border-radius: 3px;
+  border: #ffa0a0;
+  background-color: #ffa0a0;
+  transition: all 0.2s;
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: "SemiBold";
+  color: rgb(61, 61, 61);
+}
+
+.button_block:hover {
+  margin: auto;
+  padding-left: 3%;
+  transition: all 0.2s;
+  width: 100%;
+  border-radius: 3px;
+  border: #ff5151;
+  background-color: #ff5151;
+
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-style: "SemiBold";
+  color: rgb(61, 61, 61);
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Charge Link</title>
+    <link rel="stylesheet" href="css/bar.css" />
+
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/stats/stats_workspace.css" />
+    <link rel="stylesheet" href="css/stats/tabs.css" />
+    <link rel="stylesheet" href="css/stats/table.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_style">
+    <script src="/js/stats_switcher.js"></script>
+    <div class="bar">
+      <div class="bar_section_1">
+        <img class="logo" src="./resources/icons/logo2.svg" alt="" />
+      </div>
+      <div class="bar_section_2">
+        <div class="border_sections"></div>
+        <button class="bar_button_sections_selected">
+          <img class="bar_icon" src="./resources/icons/icon_chart.svg" alt="" />
+          <a>Статистика</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'station.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_layers.svg"
+            alt=""
+          />
+          <a class="bar_text" href="station.html">Станции</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'clients.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_users.svg" alt="" />
+          <a class="bar_text" href="clients.html">Клиенты</a>
+        </button>
+        <div class="border_sections"></div>
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'comands.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_comands.svg"
+            alt=""
+          />
+          <a class="bar_text" href="comands.html">Команды</a>
+        </button>
+        <div class="border_sections"></div>
+      </div>
+      <div class="bar_section_1"></div>
+    </div>
+
+    <div class="workspace">
+      <a class="title_text">Статистика</a>
+      <div class="main_box">
+        <div class="workspace_box_section_1">
+          <div class="data_box">
+            <select class="data_selector" name="year" id="year">
+              <option selected disabled value="none">Выберите период</option>
+              <option value="2022">Январь-Июнь 2022</option>
+              <option value="2021">Июль-Декабрь 2022</option>
+              <option value="2022">Январь-Июнь 2021</option>
+              <option value="2021">Июль-Декабрь 2021</option>
+            </select>
+          </div>
+        </div>
+        <div class="workspace_box_section_2">
+          <div class="info_card">
+            <div class="info_card_section_1">
+              <a class="info_card_text">Колличество сессий</a>
+            </div>
+            <div class="info_card_section_2">
+              <a class="info_card_text">51 шт.</a>
+            </div>
+          </div>
+          <div class="info_card">
+            <div class="info_card_section_1">
+              <a class="info_card_text">DC</a>
+              <div class="info_card_stats_color_green"></div>
+            </div>
+            <div class="info_card_section_2">
+              <a class="info_card_text">290 кВч</a>
+            </div>
+          </div>
+          <div class="info_card">
+            <div class="info_card_section_1">
+              <a class="info_card_text">AC</a>
+              <div class="info_card_stats_color_blue"></div>
+            </div>
+            <div class="info_card_section_2">
+              <a class="info_card_text">10 кВч</a>
+            </div>
+          </div>
+          <div class="sum_info_card">
+            <div class="info_card_section_1">
+              <a class="info_card_text">Суммарное энергопотребление</a>
+            </div>
+            <div class="info_card_section_2">
+              <a class="info_card_text">350 кВч</a>
+            </div>
+          </div>
+        </div>
+        <div class="workspace_box_section_3">
+          <div class="switcher_box">
+            <div class="table_border"></div>
+            <div class="tabs">
+              <input
+                type="radio"
+                name="tab-btn"
+                id="tab-btn-1"
+                value=""
+                checked
+              />
+              <label for="tab-btn-1">График</label>
+              <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+              <label for="tab-btn-2">Таблица</label>
+
+              <div id="content-1">Содержимое 1...</div>
+              <div class="table_box" id="content-2">
+              
+                <table class="table">
+                 
+                  <thead>
+                    <tr>
+                      <th>Тип доступа</th>
+                      <th>Наименование</th>
+                      <th>Координаты</th>
+                      <th>Энергия, кВч</th>
+                      <th>Статус</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                      
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_red_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_red_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_red_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_red_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>AC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_red_status"></div></td>
+                    </tr>
+                    <tr>
+                     <td>DC</td>
+                      <td>Станция на иркутском тракте 23</td>
+                      <td>56.513883, 85.046671</td>
+                      <td>9.1</td>
+                      <td><div class="circle_green_status"></div></td>
+                    </tr>
+                 
+                   
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
