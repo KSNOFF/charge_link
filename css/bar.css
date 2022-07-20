@@ -58,7 +58,7 @@
 }
 
 .bar_button_sections_selected {
-  width: 94%;
+  width: 90%;
   height: 18%;
   vertical-align: middle;
   margin: auto;
@@ -75,7 +75,7 @@
 
 .bar_button_sections {
   width: 86%;
-  height: 18%;
+  height: 16%;
   vertical-align: middle;
   margin: auto;
   border-radius: 10px;
@@ -91,7 +91,7 @@
 
 .bar_button_sections:hover {
   width: 86%;
-  height: 18%;
+  height: 16%;
   transition: all 0.2s;
   vertical-align: middle;
   margin: auto;

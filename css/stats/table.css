@@ -2,7 +2,7 @@
   height: 100%;
   padding: 8px 10px 10px 10px;
   background-color: aquamarine;
-
+  overflow-y: scroll;
   border-radius: 10px;
   border-collapse: collapse;
 }
