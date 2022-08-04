@@ -79,8 +79,8 @@
   vertical-align: middle;
   margin: auto;
   border-radius: 10px;
-  background-color: #173257;
-  border: #173257;
+  background-color: #1f406f;
+  border: #1f406f;
 
   font-family: "Open Sans";
   font-size: 1vw;
@@ -90,7 +90,7 @@
 }
 
 .bar_button_sections:hover {
-  width: 86%;
+  width: 88%;
   height: 16%;
   transition: all 0.2s;
   vertical-align: middle;

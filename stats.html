@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/stats/stats_workspace.css" />
     <link rel="stylesheet" href="css/stats/tabs.css" />
     <link rel="stylesheet" href="css/stats/table.css" />
+    <link rel="stylesheet" href="css/stats/chart.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Open Sans"
@@ -18,18 +19,18 @@
     />
   </head>
   <body class="body_style">
-    <script src="/js/stats_switcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js"></script>
+
     <div class="bar">
       <div class="bar_section_1">
         <img class="logo" src="./resources/icons/logo2.svg" alt="" />
       </div>
       <div class="bar_section_2">
-        <div class="border_sections"></div>
         <button class="bar_button_sections_selected">
           <img class="bar_icon" src="./resources/icons/icon_chart.svg" alt="" />
           <a>Статистика</a>
         </button>
-        <div class="border_sections"></div>
+
         <button
           class="bar_button_sections"
           onclick="window.location.href = 'station.html';"
@@ -41,7 +42,7 @@
           />
           <a class="bar_text" href="station.html">Станции</a>
         </button>
-        <div class="border_sections"></div>
+
         <button
           class="bar_button_sections"
           onclick="window.location.href = 'clients.html';"
@@ -49,7 +50,7 @@
           <img class="bar_icon" src="./resources/icons/icon_users.svg" alt="" />
           <a class="bar_text" href="clients.html">Клиенты</a>
         </button>
-        <div class="border_sections"></div>
+
         <button
           class="bar_button_sections"
           onclick="window.location.href = 'docs.html';"
@@ -61,7 +62,7 @@
           />
           <a class="bar_text" href="docs.html">Документооборт</a>
         </button>
-        <div class="border_sections"></div>
+
         <button
           class="bar_button_sections"
           onclick="window.location.href = 'comands.html';"
@@ -73,7 +74,6 @@
           />
           <a class="bar_text" href="comands.html">Команды</a>
         </button>
-        <div class="border_sections"></div>
       </div>
       <div class="bar_section_1"></div>
     </div>
@@ -130,7 +130,6 @@
         </div>
         <div class="workspace_box_section_3">
           <div class="switcher_box">
-            
             <div class="tabs">
               <input
                 type="radio"
@@ -143,11 +142,59 @@
               <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
               <label for="tab-btn-2">Таблица</label>
 
-              <div id="content-1">Содержимое 1...</div>
+              <div class="chart_box" id="content-1">
+                <canvas class="chart" id="myChart"></canvas>
+                <script>
+                  const ctx = document
+                    .getElementById("myChart")
+                    .getContext("2d");
+                  const myChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                      labels: [
+                        "Январь",
+                        "Февраль",
+                        "Март",
+                        "Апрель",
+                        "Май",
+                        "Июнь",
+                        "Июль",
+                        "Август",
+                        "Сентябрь",
+                        "Октябрь",
+                        "Ноябрь",
+                        "Декабрь",
+                      ],
+                      datasets: [
+                        {
+                          label: "AC",
+                          data: [12, 19, 3, 5, 2, 7, 1, 16, 3, 9, 10, 8],
+                          backgroundColor: ["#00D615"],
+                        },
+
+                        {
+                          label: "DC",
+                          data: [16, 19, 3, 5, 2, 7, 1, 16, 3, 9, 10, 8],
+                          backgroundColor: ["#0487FF"],
+                        },
+                      ],
+                    },
+                    options: {
+                      isStacked: true,
+                      scales: {
+                        x: {
+                          stacked: true,
+                        },
+                        y: {
+                          stacked: true,
+                        },
+                      },
+                    },
+                  });
+                </script>
+              </div>
               <div class="table_box" id="content-2">
-              
                 <table class="table">
-                 
                   <thead>
                     <tr>
                       <th>Тип доступа</th>
@@ -155,7 +202,6 @@
                       <th>Координаты</th>
                       <th>Энергия, кВч</th>
                       <th>Статус</th>
-                      
                     </tr>
                   </thead>
                   <tbody>
@@ -165,99 +211,9 @@
                       <td>56.513883, 85.046671</td>
                       <td>9.1</td>
                       <td><div class="circle_green_status"></div></td>
-                      
                     </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_red_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_red_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_red_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                    <tr>
-                     <td>Личная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_red_status"></div></td>
-                    </tr>
-                    
-                    <tr>
-                     <td>Общедоступная</td>
-                      <td>Станция на иркутском тракте 23</td>
-                      <td>56.513883, 85.046671</td>
-                      <td>9.1</td>
-                      <td><div class="circle_green_status"></div></td>
-                    </tr>
-                 
-                   
                   </tbody>
                 </table>
-              </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Charge Link</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/bar.css" />
+    
+    <link rel="stylesheet" href="css/station_card/station_card_workspace.css" />
+    <link rel="stylesheet" href="css/station_card/tiny_map.css" />
+    <link rel="stylesheet" href="css/station_card/tiny_chart.css" />
+    <link rel="stylesheet" href="css/station_card/tiny_tabs.css" />
+    <link rel="stylesheet" href="css/station_card/tiny_table.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="body_style">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.js"></script>
+    <div class="bar">
+      <div class="bar_section_1">
+        <img class="logo" src="./resources/icons/logo2.svg" alt="" />
+      </div>
+      <div class="bar_section_2">
+        
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'stats.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_chart.svg" alt="" />
+          <a class="bar_text" href="stats.html">Статистика</a>
+        </button>
+        
+        <button class="bar_button_sections_selected"
+        onclick="window.location.href = 'station.html';">
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_layers.svg"
+            alt=""
+          />
+          <a>Станции</a>
+        </button>
+        
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'clients.html';"
+        >
+          <img class="bar_icon" src="./resources/icons/icon_users.svg" alt="" />
+          <a class="bar_text" href="clients.html">Клиенты</a>
+        </button>
+        
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'docs.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_comands.svg"
+            alt=""
+          />
+          <a class="bar_text" href="docs.html">Документооборт</a>
+        </button>
+        
+        <button
+          class="bar_button_sections"
+          onclick="window.location.href = 'comands.html';"
+        >
+          <img
+            class="bar_icon"
+            src="./resources/icons/icon_comands.svg"
+            alt=""
+          />
+          <a class="bar_text" href="comands.html">Команды</a>
+        </button>
+        
+      </div>
+      <div class="bar_section_1"></div>
+    </div>
+
+    <div class="workspace">
+      <a class="title_text">Карточка станции</a>
+      <div class="main_box">
+        <div class="workspace_box_section_1">
+          <div class="workspace_box_section_part_1">
+            <div class="workspace_box_section_part_1_map">
+              <div class="map_box">
+                <div class="map" id="js-contactsMap"></div>
+              </div>
+            </div>
+
+            <div class="workspace_box_section_part_1_info">
+              <div class="workspace_box_section_part_1_info_text">
+                ID станции:
+                <a>151621</a>
+              </div>
+              <div class="workspace_box_section_part_1_info_text">
+                Тип:
+                <a>Общественная</a>
+              </div>
+              <div class="workspace_box_section_part_1_info_text">
+                Коннекторы:
+                <a>1, 6, 4</a>
+              </div>
+              <div class="workspace_box_section_part_1_info_text">
+                Дата установки:
+                <a>25.04.21</a>
+              </div>
+            </div>
+          </div>
+          <div class="workspace_box_section_part_2">
+            <div class="table_box" id="content-2">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID Коннектор</th>
+                    <th>Статус</th>
+                    <th>Текущая транзакия</th>
+                    <th>Энергия</th>
+                    <th>Мощность</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><div class="circle_green_status"></div></td>
+                    <td>564851</td>
+                    <td>23</td>
+                    <td>18W</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><div class="circle_green_status"></div></td>
+                    <td>564851</td>
+                    <td>23</td>
+                    <td>18W</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><div class="circle_green_status"></div></td>
+                    <td>564851</td>
+                    <td>23</td>
+                    <td>18W</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td><div class="circle_green_status"></div></td>
+                    <td>564851</td>
+                    <td>23</td>
+                    <td>18W</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+       
+      </div>
+      <div class="workspace_box_section_2">
+        <div class="workspace_box_section_part_3">
+          <div class="data_box">
+            <select class="data_selector" name="year" id="year">
+              <option selected disabled value="none">Выберите период</option>
+              <option value="2022">Январь-Июнь 2022</option>
+              <option value="2021">Июль-Декабрь 2022</option>
+              <option value="2022">Январь-Июнь 2021</option>
+              <option value="2021">Июль-Декабрь 2021</option>
+            </select>
+          </div>
+        </div>
+        <div class="workspace_box_section_part_4">
+          <div class="switcher_box">
+            <div class="tabs">
+              <input
+                type="radio"
+                name="tab-btn"
+                id="tab-btn-1"
+                value=""
+                checked
+              />
+              <label for="tab-btn-1">График</label>
+              <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+              <label for="tab-btn-2">Таблица</label>
+
+              <div class="chart_box" id="content-1">
+                <canvas class="chart" id="myChart"></canvas>
+                <script>
+                  const ctx = document
+                    .getElementById("myChart")
+                    .getContext("2d");
+                  const myChart = new Chart(ctx, {
+                    type: "line",
+                    data: {
+                      labels: [
+                        "Январь",
+                        "Февраль",
+                        "Март",
+                        "Апрель",
+                        "Май",
+                        "Июнь",
+                        "Июль",
+                        "Август",
+                        "Сентябрь",
+                        "Октябрь",
+                        "Ноябрь",
+                        "Декабрь",
+                      ],
+                      
+                      datasets: [
+                        {
+                          label: "кВч",
+                          data: [120, 19, 3, 5, 2, 7, 1, 16, 3, 9, 10, 8],
+                          backgroundColor: ["#00D61550"],
+                        },
+                      ],
+                      
+                    },
+                    options: {
+                      onResize: 0.1,
+                      maintainAspectRatio: false,
+                      resizeDelay: 0.1,
+                      tension: 0.2,
+                      fill: true,
+                      border: 1,
+                      borderColor: '#72727290',
+                      isStacked: true,
+                      scales: {
+                        x: {
+                          stacked: true,
+                        },
+                        y: {
+                          stacked: true,
+                        },
+                      },
+                    },
+                  });
+                  function beforePrintHandler () {
+    for (let id in Chart.instances) {
+        Chart.instances[id].resize();
+    }
+}
+                </script>
+              </div>
+              <div class="table_box" id="content-2">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID Клиента</th>
+                      <th>ID Транзакции</th>
+                      <th>Коннектор</th>
+                      <th>Начало</th>
+                      <th>Конец</th>
+                      <th>Энергия, кВч</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr> <tr>
+                      <td>166516</td>
+                      <td>45dfgd5fg4</td>
+                      <td>1</td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>12.04.21 16:22:08 </td>
+                      <td>9.1</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="workspace_box_section_part_5">
+          <div class="text_box_section_left">
+            <a>Итого кВч за период: 18</a>
+            
+          </div>
+          <div class="text_box_section_right">
+            
+            <a>Итого сессий за период: 3</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="./js/station/google_map.js"></script>
+  </body>
+</html>
