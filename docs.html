@@ -7,7 +7,9 @@
     <title>Charge Link</title>
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/bar.css" />
-    <link rel="stylesheet" href="css/comands/comand_workspace.css" />
+    <link rel="stylesheet" href="css/docs/tabs.css" />
+    <link rel="stylesheet" href="css/docs/table.css" />
+    <link rel="stylesheet" href="css/docs/docs_workspace.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Open Sans"
@@ -82,8 +84,47 @@
     <div class="workspace">
       <a class="title_text">Документооборт</a>
       <div class="main_box">
-        <div class="workspace_box_section_1"></div>
-        <div class="workspace_box_section_2"></div>
+        <div class="switcher_box">
+          <div class="tabs">
+            <input
+              type="radio"
+              name="tab-btn"
+              id="tab-btn-1"
+              value=""
+              checked
+            />
+            <label for="tab-btn-1">Отчет</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
+            <label for="tab-btn-2">История</label>
+
+            <div class="report_box" id="content-1">
+              <div class="section_1"></div>
+              <div class="section_2"></div>
+              <div class="section_3"></div>
+              <div class="section_4"></div>
+            </div>
+            <div class="table_box" id="content-2">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Id Станции</th>
+                    <th>Создан</th>
+                    <th>Заказчик</th>
+                    <th>Просмотр</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>651621</td>
+                    <td>20.03.2022</td>
+                    <td>Иванов И.А.</td>
+                    <td>9.1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

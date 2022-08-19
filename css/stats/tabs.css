@@ -1,5 +1,4 @@
 .tabs {
-  display: flex;
   flex-direction: column;
   font-size: 0;
   height: 100%;
